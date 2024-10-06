@@ -1,0 +1,180 @@
+% -*- mode:flyspell; mode:latex -*-
+\documentclass[12pt]{article}
+\addtolength{\oddsidemargin} {-0.885in}
+\addtolength{\textwidth}{1.75in}
+\addtolength{\evensidemargin}{-0.8in}
+
+
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{float}
+%% \usepackage{siunitx}
+
+%% \usepackage{gensymb}
+
+
+\usepackage{tikz}
+\usepackage{[caption}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{decorations.pathmorphing}
+% \usepackage[absolute,overlay]{textpos}
+% \usepackage{onimage}
+
+\usepackage{tabularx}
+\usepackage{times}
+\usepackage{graphics}
+
+% \usepackage{subfigure}
+% \usepackage{scalefnt}
+%
+% \renewcommand\thesubfigure{\arabic{subfigure}}
+
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{hhline}
+\usepackage{subfig}
+\usepackage{color}
+\usepackage[all]{hypcap}
+
+\usepackage[normalem]{ulem}  % for striking out
+% \usepackage{fancyhdr}
+% \pagestyle{fancy}
+% \fancyhead[C]{}
+% \fancyhead[L] {\it{Mu2e-doc-29670-v1.0} }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% use natbib - biblatex not available on Mu2e interactive nodes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[square,sort,comma,numbers]{natbib}
+
+% location of the .bib files: env var BIBINPUTS (~/library/bibliography)
+
+% \usepackage[backend=biber, style=numeric-comp, sorting=ynt] {biblatex}
+% \addbibresource{clfv.bib}
+
+% \addbibresource{stntuple.bib}
+% \addbibresource{mu2e_web.bib}
+% \addbibresource{radiative_pion_capture.bib}
+
+\graphicspath{{figures/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% if portability is needed, include the ~/tex/commands/commands.tex file locally
+% for example, copy it locally, rename into local_commands.tex, and include
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \include{local_commands}
+\include{commands}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{titlepage}
+  \begin{flushright}
+    \bf {MU2E/PHYSICS/XXXXX} \\
+    version 1.01
+    \today
+ \end{flushright}
+
+  \vspace{1cm}
+
+  \begin{center}
+    {\Large \bf On the choice of the TS3 antiproton absorption elements \\
+
+      \vspace{0.3in}
+      (summary of the considerations)
+    }
+
+    \vspace{1cm}
+    P.Murat(FNAL)
+
+    \footnote{\texttt{Fermilab; e-mail: murat@fnal.gov}}
+    \vspace{0.3cm}
+
+    \vspace{0.8cm}
+  \end{center}
+
+  \begin{abstract}
+    \vspace{0.2in}
+    This note presents a summary of consideration underlying the choice
+    parameters of the pbar absorbers in the Mu2e beamline.
+  \end{abstract}
+
+\end{titlepage}
+% \frontmatter
+% \chapter*{Abstract}
+%
+% \addcontentsline{toc}{chapter}{Abstract}
+%
+% \mainmatter
+%
+{\tableofcontents}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\chapter{Calibration}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \input{input_data}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\section {Revision History and TODO items}
+
+\begin{itemize}
+\item
+  v1.01: inital version
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section {Introduction}
+
+Antiproton annihilation in the stopping target (ST) is one of the background
+sources to the search for $\mu \to e$ conversion. The background is suppressed
+by several absorption elements:
+
+\begin{itemize}
+\item
+  an absoption window in front of the TS1 collimator.
+  Its main purpose of the TS1 window is to reduce the flux of antiprotons
+  reaching the TS3, and through that, the contribution of delayed RPC.
+\item
+  a ``collar'' on the bottom of the TS1 collimator. The collar suppresses
+  the high-momentum, p > 100 \MeVc\  component of the antiproton background
+\item
+  an absorption window and an additional wedge-shaped absorber in the
+  middle of TS3, in between the TS3u and TS3d collimators stop the
+  antiprotons with momenta below $\simeq 100$ \MeVc, and by virtue of doing
+  that serve as a source of the delayed RPC background.
+\end{itemize}
+
+The window in the middle of TS3 serves an additional purpose of separating
+the PS and DS vacuum regions which have different vacuum requirements,
+$< 10^{-5}$ and $< 10^{-4}$ torr respectively.
+
+In case of an accidental vacuum loss, the window should be able withstand
+the 50 psi pressure differential \cite{XXXX}.
+
+To withstand a differential of 1 atm, a D=45 cm Ti window should
+be about 300 um thick.
+
+\include{ts1_window}
+\include{ts1_collar}
+\include{ts3_window_wedge}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\section {Summary}
+
+We presented a summary of considerations underlying the choice of parameters 
+of the Mu2e antiproton absorbers. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\bibliographystyle{unsrtnat}
+\bibliography{clfv,mu2e_internal_notes,mu2e_piplusenu_notes}
+
+% \include{appendix_a}
+% \include{appendix_b}
+
+\end{document}

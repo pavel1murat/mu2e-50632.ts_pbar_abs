@@ -1,0 +1,14 @@
+#+startup:fold -*- buffer-read-only:t -*-
+* ------------------------------------------------------------------------------
+* directory: file:./
+* ------------------------------------------------------------------------------
+* note: file:tmp/mu2e-xxxxx.pdf
+* talks:                                                                     
+** file:../../talks/2020-05-28-ts13-coll-pbar/AAA_README.org
+** file:../../talks/2020-05-14-ts13-coll-pbar/AAA_README.org
+** file:../../talks/2020-04-30-pbar-ts1-ts3/AAA_README.org
+** file:../../talks/2020-04-02-pbar-hayman2-vs-cd3/AAA_README.org
+** file:../../talks/2019-11-21-ts1-coll-pbar/AAA_README.org
+** file:../../talks/2019-10-24-ts1-coll-pbar/AAA_README.org
+** file:../../talks/2019-10-10-ts1-coll-pbar/AAA_README.org
+** file:../../talks/2014-02-06-mars-vs-g4-pbar/AAA_README.org
