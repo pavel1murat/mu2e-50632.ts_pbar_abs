@@ -5,7 +5,7 @@
 #------------------------------------------------------------------------------
 dir=.
 
-note       := mu2e-xxxxx
+note       := mu2e-50632
 # bkg_table  := background_optimized_standalone
 
 tex_files := $(note).tex # $(wildcard *.tex)

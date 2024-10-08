@@ -2,7 +2,7 @@
 * ------------------------------------------------------------------------------
 * directory: file:./
 * ------------------------------------------------------------------------------
-* note: file:tmp/mu2e-xxxxx.pdf
+* note: file:tmp/mu2e-50632.pdf
 * talks:                                                                     
 ** file:../../talks/2020-05-28-ts13-coll-pbar/AAA_README.org
 ** file:../../talks/2020-05-14-ts13-coll-pbar/AAA_README.org
